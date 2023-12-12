@@ -6,9 +6,9 @@ import plotly.express as px
 from sklearn.linear_model import Ridge
 import dash_bootstrap_components as dbc
 import plotly.graph_objects as go
-app = dash.Dash(__name__)
 from dash.dependencies import Input
-
+app = dash.Dash(__name__)
+server = app.server
 
 # Sample data for testing
 df = pd.read_csv("pune.csv")
